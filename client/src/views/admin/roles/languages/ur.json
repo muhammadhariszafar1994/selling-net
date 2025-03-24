@@ -1,0 +1,20 @@
+{
+  "columnsData": [
+    {
+      "Header": "نام",
+      "accessor": "name"
+    },
+    {
+      "Header": "تخلیق کی تاریخ",
+      "accessor": "formattedCreatedAt"
+    },
+    {
+      "Header": "تاریخِ تازہ کاری",
+      "accessor": "formattedUpdatedAt"
+    }
+  ],
+  "createRole": "کردار بنائیں",
+  "crudForm": {
+    "name": "نام"
+  }
+}

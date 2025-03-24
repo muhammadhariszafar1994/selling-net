@@ -1,0 +1,13 @@
+{
+  "columnsData": [
+    {
+      "Header": "RICE IMAGE",
+      "accessor": "riceImage"
+    }
+  ],
+
+  "createFormData": "Create Form Data",
+  "crudForm": {
+    "riceImage": "Rice Image"
+  }
+}

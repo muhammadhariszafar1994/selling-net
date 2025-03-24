@@ -1,0 +1,70 @@
+{
+    "columnsData": [
+      {
+        "Header": "ٹرک آئی ڈی",
+        "accessor": "truckId"
+      },
+      {
+        "Header": "اندرونی کم پالش",
+        "accessor": "innerUnderMilled"
+      },
+      {
+        "Header": "شیڈڈ",
+        "accessor": "shaded"
+      },
+      {
+        "Header": "پونیا",
+        "accessor": "ponia"
+      },
+      {
+        "Header": "چھوٹا اناج",
+        "accessor": "shortGrain"
+      },
+      {
+        "Header": "سکڑا ہوا اناج",
+        "accessor": "shirvelledGrain"
+      },
+      {
+        "Header": "مکسنگ",
+        "accessor": "minxing"
+      },
+      {
+        "Header": "سبز اناج",
+        "accessor": "greenGrain"
+      },
+      {
+        "Header": "پالش",
+        "accessor": "polish"
+      },
+      {
+        "Header": "پڈی",
+        "accessor": "paddy"
+      },
+      {
+        "Header": "اندرونی پڈی",
+        "accessor": "innerPaddy"
+      },
+      {
+        "Header": "پتھر",
+        "accessor": "stone"
+      }
+    ],
+  
+    "createFormData": "نیا فارم ڈیٹا بنائیں",
+    "crudForm": {
+   
+      "innerUnderMilled": "اندرونی کم پالش",
+      "shaded": "شیڈڈ",
+      "ponia": "پونیا",
+      "shortGrain": "چھوٹا اناج",
+      "shirvelledGrain": "سکڑا ہوا اناج",
+      "minxing": "مکسنگ",
+      "greenGrain": "سبز اناج",
+      "polish": "پالش",
+      "paddy": "پڈی",
+      "innerPaddy": "اندرونی پڈی",
+      "stone": "پتھر"
+      
+    }
+  }
+  

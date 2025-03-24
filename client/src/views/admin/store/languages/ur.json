@@ -1,0 +1,32 @@
+{
+  "columnsData": [
+    {
+      "Header": "Store Marketplace",
+      "accessor": "storeMarketplace"
+    },
+    {
+      "Header": "Store Name",
+      "accessor": "storeName"
+    },
+    {
+      "Header": "Store Username",
+      "accessor": "storeUsername"
+    },
+    {
+      "Header": "Store Email",
+      "accessor": "storeEmail"
+    },
+    {
+      "Header": "Store Redirect Uri",
+      "accessor": "storeRedirectUri"
+    }
+  ],
+  "createStore": "Create",
+  "crudForm": {
+    "firstname": "Store Marketplace",
+    "lastname": "Store Name",
+    "age": "Store Username",
+    "gender": "Store Email",
+    "email": "Store Redirect Uri"
+  }
+}

@@ -1,0 +1,21 @@
+{
+    "actions": "افعال",
+    "add": "شامل کریں",
+    "edit": "ترمیم کریں",
+    "create": "بنائیں",
+    "update": "تازہ کاری",
+    "delete": "حذف کریں",
+    "remove": "ہٹائیں",
+    "cancel": "منسوخ کریں",
+    "yes": "جی ہاں",
+    "no": "نہیں",
+    "confirmDeletion": "حذف کرنے کی تصدیق",
+    "confirmDeletionMessage": "کیا آپ واقعی اسے حذف کرنا چاہتے ہیں؟",
+    "next": "اگلا",
+    "previous": "پچھلا",
+    "profileSettings": "پروفائل ترتیبات",
+    "language": "زبان",
+    "logout": "خروج",
+    "pass": "پاس",
+    "reject": "رد"
+}

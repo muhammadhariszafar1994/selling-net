@@ -1,0 +1,46 @@
+{
+  "columnsData": [
+    {
+      "Header": "NAME",
+      "accessor": "firstname",
+      "accessorObj": ["firstname", "lastname"]
+    },
+    {
+      "Header": "EMAIL",
+      "accessor": "email"
+    },
+    {
+      "Header": "PHONE",
+      "accessor": "phone"
+    },
+    {
+      "Header": "ADDRESS",
+      "accessor": "address"
+    },
+    {
+      "Header": "ROLE",
+      "accessor": "roles[0].name"
+    },
+    {
+      "Header": "CREATED AT",
+      "accessor": "formattedCreatedAt"
+    },
+    {
+      "Header": "UPDATED AT",
+      "accessor": "formattedUpdatedAt"
+    }
+  ],
+  "createUser": "Create User",
+  "crudForm": {
+    "firstname": "First Name",
+    "lastname": "Last Name",
+    "age": "Age",
+    "gender": "Gender",
+    "email": "Email",
+    "password": "Password",
+    "phone": "Phone",
+    "address": "Address",
+    "image": "Image",
+    "roles": "Roles"
+  }
+}

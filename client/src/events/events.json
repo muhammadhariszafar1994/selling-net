@@ -1,0 +1,10 @@
+{
+    "samplerEvent": "samplerEvent",
+    "register_truck": "register_truck",
+    "currentSampleData": "current_sample_data",
+    "qaStatusEvent": "qaStatusEvent",
+    "barcode_Event": "barcode_event",
+    "imageUploaded": "imageUploaded",
+    "enter_truck_number": "enter_truck_number",
+    "qaFormEvent": "qaFormEvent"
+}

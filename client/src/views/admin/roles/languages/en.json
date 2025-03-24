@@ -1,0 +1,21 @@
+{
+  "columnsData": [
+    {
+      "Header": "NAME",
+      "accessor": "name"
+    },
+    {
+      "Header": "CREATED AT",
+      "accessor": "formattedCreatedAt"
+    },
+    {
+      "Header": "UPDTAED AT",
+      "accessor": "formattedUpdatedAt"
+    }
+  ],
+
+  "createRole": "Create Role",
+  "crudForm": {
+    "name": "Name"
+  }
+}

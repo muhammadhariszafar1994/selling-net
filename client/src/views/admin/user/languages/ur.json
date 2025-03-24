@@ -1,0 +1,46 @@
+{
+  "columnsData": [
+      {
+        "Header": "نام",
+        "accessor": "firstname",
+        "accessorObj": ["firstname", "lastname"]
+      },
+      {
+        "Header": "ای میل",
+        "accessor": "email"
+      },
+      {
+        "Header": "فون",
+        "accessor": "phone"
+      },
+      {
+        "Header": "پتہ",
+        "accessor": "address"
+      },
+      {
+        "Header": "کردار",
+        "accessor": "roles[0].name"
+      },
+      {
+        "Header": "تخلیق کی تاریخ",
+        "accessor": "formattedCreatedAt"
+      },
+      {
+        "Header": "تاریخِ تازہ کاری",
+        "accessor": "formattedUpdatedAt"
+      }
+  ],
+  "createUser": "صارف بنائیں",
+  "crudForm": {
+    "firstname": "پہلا نام",
+    "lastname": "آخری نام",
+    "age": "عمر",
+    "gender": "صنف",
+    "email": "ای میل",
+    "password": "پاس ورڈ",
+    "phone": "فون",
+    "address": "پتہ",
+    "image": "تصویر",
+    "roles": "کردار"
+  }
+}

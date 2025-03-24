@@ -1,0 +1,141 @@
+{
+    "columnsData": [
+      {
+        "Header": "TRUCK ID",
+        "accessor": "truckId"
+      },
+      {
+        "Header": "EMPLOYEE NAME",
+        "accessor": "employeeName"
+      },
+      {
+        "Header": "COMMODITY",
+        "accessor": "commodity"
+      },
+      {
+        "Header": "OVERALL LOOK",
+        "accessor": "overallLook"
+      },
+      {
+        "Header": "BROKEN",
+        "accessor": "broken"
+      },
+      {
+        "Header": "INNER BROKEN",
+        "accessor": "innerBroken"
+      },
+      {
+        "Header": "RECHECK BROKEN",
+        "accessor": "recheckBroken"
+      },
+      {
+        "Header": "BROKEN B3",
+        "accessor": "broken_B3"
+      },
+      {
+        "Header": "DAMAGE",
+        "accessor": "damage"
+      },
+      {
+        "Header": "DAMAGE BROKEN",
+        "accessor": "damageBroken"
+      },
+      {
+        "Header": "INNER DAMAGE",
+        "accessor": "innerDamage"
+      },
+      {
+        "Header": "MRV MOISTURE",
+        "accessor": "ARVMoisture"
+      },
+      {
+        "Header": "INNER MOISTURE",
+        "accessor": "innerMoisture"
+      },
+      {
+        "Header": "RECHECK MOISTURE",
+        "accessor": "recheckMoisture"
+      },
+      {
+        "Header": "CHALKY",
+        "accessor": "chalky"
+      },
+      {
+        "Header": "CHOBA / REDDISH",
+        "accessor": "chobba_or_redish"
+      },
+      {
+        "Header": "UNDER MILLED",
+        "accessor": "underMilled"
+      },
+      {
+        "Header": "INNER UNDER MILLED",
+        "accessor": "innerUnderMilled"
+      },
+      {
+        "Header": "SHADDED",
+        "accessor": "shaded"
+      },
+      {
+        "Header": "PONIA",
+        "accessor": "ponia"
+      },
+      {
+        "Header": "SHORT GRAIN",
+        "accessor": "shortGrain"
+      },
+      {
+        "Header": "SHIRVELLED GRAIN",
+        "accessor": "shirvelledGrain"
+      },
+      {
+        "Header": "MIXING",
+        "accessor": "minxing"
+      },
+      {
+        "Header": "GREEN GRAIN",
+        "accessor": "greenGrain"
+      },
+      {
+        "Header": "POLISH",
+        "accessor": "polish"
+      },
+      {
+        "Header": "PADDY",
+        "accessor": "paddy"
+      },
+      {
+        "Header": "INNER PADDY",
+        "accessor": "innerPaddy"
+      },
+      {
+        "Header": "STONE",
+        "accessor": "stone"
+      },
+      {
+        "Header": "ANALYSIS BY",
+        "accessor": "analysisBy"
+      },
+      {
+        "Header": "IMAGE BY AI",
+        "accessor": "imageByAI"
+      }
+    ],
+  
+    "createFormData": "Create Form Data",
+    "crudForm": {
+      "innerUnderMilled": "Inner Under Milled",
+      "shaded": "Shaded",
+      "ponia": "Ponia",
+      "shortGrain": "Short Grain",
+      "shirvelledGrain": "Shirvelled Grain",
+      "minxing": "Mixing",
+      "greenGrain": "Green Grain",
+      "polish": "Polish",
+      "paddy": "Paddy",
+      "innerPaddy": "Inner Paddy",
+      "stone": "Stone"
+     
+    }
+  }
+  

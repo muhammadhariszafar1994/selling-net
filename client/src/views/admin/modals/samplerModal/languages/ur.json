@@ -1,0 +1,13 @@
+{
+  "columnsData": [
+    {
+      "Header": "چاول کی تصویر",
+      "accessor": "riceImage"
+    }
+  ],
+
+  "createFormData": "نیا فارم ڈیٹا بنائیں",
+  "crudForm": {
+    "riceImage": "چاول کی تصویر"
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "columnsData": [
+    {
+      "Header": "SERIAL NO",
+      "accessor": "serialNo"
+    },
+    {
+      "Header": "VEHICLE NO",
+      "accessor": "vehicleNumber"
+    },
+    {
+      "Header": "TRUCK TYPE",
+      "accessor": "truckType"
+    },
+    {
+      "Header": "STATUS",
+      "accessor": "Status"
+    },
+    {
+      "Header": "BUILTY NO",
+      "accessor": "builtyNo"
+    },
+    {
+      "Header": "DRIVER NAME",
+      "accessor": "driverName"
+    },
+    {
+      "Header": "SAMPLE STATUS",
+      "accessor": "SampleStatus"
+    }
+  ],
+  
+  "createTruck": "Create Truck",
+  "crudForm": {
+    "serialNo": "Serial No",
+    "vehicleNumber": "Vehicle No",
+    "truckType": "Truck Type",
+    "Status": "Status",
+    "driverNo": "Driver No",
+    "brand": "Brand",
+    "containerNo": "Container No",
+    "builtyNo": "Builty No",
+    "sampleRate": "Sample Rate",
+    "driverName": "Driver Name",
+    "fromLocation": "From Location",
+    "toLocation": "To Location"
+  }
+}

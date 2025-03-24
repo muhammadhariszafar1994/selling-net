@@ -1,0 +1,69 @@
+{
+    "columnsData": [
+      {
+        "Header": "TRUCK ID",
+        "accessor": "truckId"
+      },
+      {
+        "Header": "INNER UNDER MILLED",
+        "accessor": "innerUnderMilled"
+      },
+      {
+        "Header": "SHADDED",
+        "accessor": "shaded"
+      },
+      {
+        "Header": "PONIA",
+        "accessor": "ponia"
+      },
+      {
+        "Header": "SHORT GRAIN",
+        "accessor": "shortGrain"
+      },
+      {
+        "Header": "SHIRVELLED GRAIN",
+        "accessor": "shirvelledGrain"
+      },
+      {
+        "Header": "MIXING",
+        "accessor": "minxing"
+      },
+      {
+        "Header": "GREEN GRAIN",
+        "accessor": "greenGrain"
+      },
+      {
+        "Header": "POLISH",
+        "accessor": "polish"
+      },
+      {
+        "Header": "PADDY",
+        "accessor": "paddy"
+      },
+      {
+        "Header": "INNER PADDY",
+        "accessor": "innerPaddy"
+      },
+      {
+        "Header": "STONE",
+        "accessor": "stone"
+      }
+    ],
+  
+    "createFormData": "Create Form Data",
+    "crudForm": {
+      "innerUnderMilled": "Inner Under Milled",
+      "shaded": "Shaded",
+      "ponia": "Ponia",
+      "shortGrain": "Short Grain",
+      "shirvelledGrain": "Shirvelled Grain",
+      "minxing": "Mixing",
+      "greenGrain": "Green Grain",
+      "polish": "Polish",
+      "paddy": "Paddy",
+      "innerPaddy": "Inner Paddy",
+      "stone": "Stone"
+     
+    }
+  }
+  

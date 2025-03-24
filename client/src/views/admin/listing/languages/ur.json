@@ -1,0 +1,32 @@
+{
+  "columnsData": [
+    {
+      "Header": "Store Marketplace",
+      "accessor": "storeMarketplace"
+    },
+    {
+      "Header": "Client Id",
+      "accessor": "clientId"
+    },
+    {
+      "Header": "Client Secret",
+      "accessor": "clientSecret"
+    },
+    {
+      "Header": "Redirect Uri",
+      "accessor": "redirectUri"
+    },
+    {
+      "Header": "API OAuth Token",
+      "accessor": "apiOAuthToken"
+    }
+  ],
+  "createStore": "Create",
+  "crudForm": {
+    "storeMarketplace": "Store Marketplace",
+    "clientId": "Client Id",
+    "clientSecret": "Client Secret",
+    "redirectUri": "Redirect Uri",
+    "apiOAuthToken": "API OAuth Token"
+  }
+}

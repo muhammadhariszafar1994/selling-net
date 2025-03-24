@@ -1,0 +1,43 @@
+{
+  "columnsData": [
+    {
+      "Header": "سیرئیل نمبر",
+      "accessor": "serialNo"
+    },
+    {
+      "Header": "گاڑی نمبر",
+      "accessor": "vehicleNumber"
+    },
+    {
+      "Header": "ٹرک کی قسم",
+      "accessor": "truckType"
+    },
+    {
+      "Header": "حالت",
+      "accessor": "Status"
+    },
+    {
+      "Header": "بلیٹی نمبر",
+      "accessor": "builtyNo"
+    },
+    {
+      "Header": "ڈرائیور کا نام",
+      "accessor": "driverName"
+    }
+  ],
+  "createTruck": "ٹرک بنائیں",
+  "crudForm": {
+    "serialNo": "سیرئیل نمبر",
+    "vehicleNumber": "گاڑی نمبر",
+    "truckType": "ٹرک کی قسم",
+    "Status": "حالت",
+    "driverNo": "ڈرائیور نمبر",
+    "brand": "برانڈ",
+    "containerNo": "کنٹینر نمبر",
+    "builtyNo": "بلیٹی نمبر",
+    "sampleRate": "نمونہ کی شرح",
+    "driverName": "ڈرائیور کا نام",
+    "fromLocation": "جانے کی جگہ",
+    "toLocation": "آنے کی جگہ"
+  }
+}
