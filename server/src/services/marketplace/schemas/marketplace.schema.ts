@@ -17,6 +17,12 @@ export class Marketplace extends Document {
 
   @Prop({ type: Object })
   apiOAuthToken: string;
+
+  @Prop({ type: Object })
+  grant_type: string;
+
+  @Prop({ type: Object })
+  scope: string;
 }
 
 export const MarketplaceSchema = SchemaFactory.createForClass(Marketplace);

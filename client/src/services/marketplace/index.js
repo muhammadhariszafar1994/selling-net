@@ -53,9 +53,15 @@ export const remove = async (id) => {
 };
 
 export const generateToken = async (id) => {
-  await AxiosInstance.post(`/marketplace/generate-token/${id}`, {}, {
-    headers: getAuthHeader(),
-  })
-    .then(async (response) => {})
-    .catch(async () => {});
+  return new Promise((resolve, reject) => {
+    AxiosInstance.post(`/marketplace/generate-token/${id}`, {}, {
+      headers: getAuthHeader(),
+    })
+      .then(async (response) => {
+        resolve(response);
+      })
+      .catch(async (error) => {
+        reject(error);
+      });
+  });
 };

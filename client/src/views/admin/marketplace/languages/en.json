@@ -19,6 +19,14 @@
     {
       "Header": "API OAuth Token",
       "accessor": "apiOAuthToken"
+    },
+    {
+      "Header": "Grant Type",
+      "accessor": "grant_type"
+    },
+    {
+      "Header": "Scope",
+      "accessor": "scope"
     }
   ],
   "createStore": "Create",
@@ -27,6 +35,8 @@
     "clientId": "Client Id",
     "clientSecret": "Client Secret",
     "redirectUri": "Redirect Uri",
-    "apiOAuthToken": "API OAuth Token"
+    "apiOAuthToken": "API OAuth Token",
+    "grant_type": "Grant Type",
+    "scope": "Scope"
   }
 }

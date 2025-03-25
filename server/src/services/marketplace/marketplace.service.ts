@@ -72,10 +72,15 @@ export class MarketplaceService {
       // Fetch marketplace credentials
       const marketplaceData = await this.getMarketplaceCredentials(marketplace.storeMarketplace);
 
+      headers = {
+        'Authorization': `Basic ${Buffer.from(`${marketplaceData.clientId}:${marketplaceData.clientSecret}`).toString('base64')}`,
+        'Content-Type': 'application/x-www-form-urlencoded',
+      };
+
       // For Amazon
       if (marketplace.storeMarketplace === 'amazon') {
         url = 'https://api.amazon.com/auth/o2/token';
-        headers = { 'Content-Type': 'application/x-www-form-urlencoded' };
+        
         body = qs.stringify({
           grant_type: "client_credentials",
           scope: "appstore::apps:readwrite",
@@ -87,12 +92,10 @@ export class MarketplaceService {
       // For eBay
       if (marketplace.storeMarketplace === 'ebay') {
         url = 'https://api.ebay.com/identity/v1/oauth2/token';
-        headers = {
-          'Authorization': `Basic ${Buffer.from(`${marketplaceData.clientId}:${marketplaceData.clientSecret}`).toString('base64')}`,
-          'Content-Type': 'application/x-www-form-urlencoded',
-        };
+        
         body = qs.stringify({
-          grant_type: 'authorization_code',
+          grant_type: marketplace.grant_type,
+          scope: marketplace.scope,
           redirect_uri: marketplaceData.redirectUri,
           client_id: `${marketplaceData.clientId}`,
           client_secret: `${marketplaceData.clientSecret}`,
@@ -100,20 +103,18 @@ export class MarketplaceService {
       }
 
       // Send POST request to fetch the token
-      const response = await axios.post(url, body, { headers }).then().catch((error) => {
-        console.error('error', error)
-      });
+      const response = await axios.post(url, body, { headers });
       
       // Log the response for debugging
-      // console.debug(`Response from ${marketplace.storeMarketplace}:`, response.data);
+      console.debug(`Response from ${marketplace.storeMarketplace}:`, response.data);
 
-      // const { access_token } = response.data;
+      const { access_token } = response.data;
 
-      // if (!access_token) {
-      //   throw new NotFoundException('Access token not found');
-      // }
+      if (!access_token) {
+        throw new NotFoundException('Access token not found');
+      }
 
-      // return { access_token };
+      return { access_token };
       
     } catch (error) {
       console.error('Error generating token:', error.message);

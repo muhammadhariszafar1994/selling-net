@@ -33,31 +33,29 @@ const validationSchema = Yup.object().shape({
   apiOAuthToken: Yup.string(),
 });
 
+const initialValues = {
+  storeMarketplace: "",
+  clientId: "",
+  clientSecret: "",
+  redirectUri: "",
+  apiOAuthToken: "",
+  grant_type: "",
+  scope: ""
+};
+
 export default function Marketplace() {
   const { t } = useTranslation();
   const [isOpen, setIsOpen] = useState(false);
   const [isConfirmOpen, setIsConfirmOpen] = useState(false);
   const [selectedId, setSelectedId] = useState(null);
-  const [formValues, setFormValues] = useState({
-    storeMarketplace: "",
-    clientId: "",
-    clientSecret: "",
-    redirectUri: "",
-    apiOAuthToken: "",
-  });
+  const [formValues, setFormValues] = useState(initialValues);
   const marketplaces = useSelector((state) => state.marketplace.data);
 
   const onOpen = () => setIsOpen(true);
   const onClose = () => {
     setIsOpen(false);
     setSelectedId(null);
-    setFormValues({
-      storeMarketplace: "",
-      clientId: "",
-      clientSecret: "",
-      redirectUri: "",
-      apiOAuthToken: "",
-    });
+    setFormValues(initialValues);
   };
   const onConfirmOpen = () => setIsConfirmOpen(true);
   const onConfirmClose = () => setIsConfirmOpen(false);
@@ -82,6 +80,8 @@ export default function Marketplace() {
       clientSecret: data.clientSecret,
       redirectUri: data.redirectUri,
       apiOAuthToken: data.apiOAuthToken || "",
+      grant_type: data.grant_type || "",
+      scope: data.scope || ""
     });
     setSelectedId(data._id);
     onOpen();
@@ -102,7 +102,12 @@ export default function Marketplace() {
 
   const handleGenerate = async () => {
     if (selectedId) {
-      generateToken(selectedId);
+      const response = await generateToken(selectedId);
+
+      setFormValues((prevValues) => ({
+        ...prevValues,
+        apiOAuthToken: response?.data?.access_token,
+      })); 
     }
   };
 
@@ -175,6 +180,18 @@ export default function Marketplace() {
                         </Box>
                       </Flex>
                       <FormErrorMessage>{errors.apiOAuthToken}</FormErrorMessage>
+                    </FormControl>
+
+                    <FormControl isInvalid={errors.grant_type && touched.grant_type}>
+                      <FormLabel>Grant Type</FormLabel>
+                      <Field as={Input} name="grant_type" />
+                      <FormErrorMessage>{errors.grant_type}</FormErrorMessage>
+                    </FormControl>
+
+                    <FormControl isInvalid={errors.scope && touched.scope}>
+                      <FormLabel>Scope</FormLabel>
+                      <Field as={Input} name="scope" />
+                      <FormErrorMessage>{errors.scope}</FormErrorMessage>
                     </FormControl>
 
                     <Button type="submit" colorScheme="blue">
